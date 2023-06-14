@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+    .attribution { font-size: 11px; text-align:center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+     body {background-color: #020840;}
+    .parent{size:100vh; flex-wrap:wrap; display:flex; align-content: center;}
+    .first-container{background-color: #484b66; border-radius: 20px; margin: auto; padding: 20px;}
+    .second-container{ padding-bottom: 18px;}
+    .first-picture{height:300px; border-radius: 18px;}
+    .second-picture{ height:50px; }
+    .first-paragraph{ font-size: 25px; font-weight: 70px; color: white; margin-top: 4px; display:flex;;font-family: 'Outfit', sans-serif;}
+    .second-paragraph {font-size: 15px; color:grey; margin-top: 3px; display:flex; ;font-family: 'Outfit', sans-serif; }
+    .third-paragraph{color: aquamarine; font-size: 15px; margin-top: 3px;text-align: left; ;font-family: 'Outfit', sans-serif;}
+    .fourth-paragraph {text-align: right; color: white; ;font-family: 'Outfit', sans-serif;text-align: right;padding-bottom: 2px;}
+    hr{width:300px; opacity: 0.3; margin: auto; margin-top: 20px;}
+    .new-level {display: flex; justify-content: space-between; }
+    * { padding: 0; margin: 0;}
+    .finale { display: flex;align-items: center; padding: 20px;}
+    .last{  align-self: center; margin-left: 40px;}
+    .new { color:#020840;}
+    .first-paragraph:hover,.second-paragraph:hover,.third-paragraph:hover,.fourth-paragraph:hover,.last:hover{color: hsl(180, 100%, 50%); cursor: pointer;}
+    .iris{width:300px; height:300px; top: 0; left:0; position: absolute; display: flex; justify-content: center; align-items: center; background: hsla(178, 100%, 50%, 0.4);border-radius:18px; opacity: 0; transition: 0.6s; }
+    .iris:hover { opacity: 1; cursor:pointer }
+    .new{position: relative; }
+    .bull-eye{ height:50px;  }
+  </style>
+</head>
+<body>
+  <div class="parent">
+   <div class="first-container">
+    <div class="new">
+          <img class="first-picture" src="images/image-equilibrium.jpg" alt="">
+        <div class="iris">
+           <img class="bull-eye" src="images/icon-view.svg" alt="">
+        </div>
+    </div>
+      <div class="second-container">
+        <p class="first-paragraph">Equilibrium #3429</p>
+        <p class="second-paragraph"> Our Equilibrium collection promotes <br>balance and calm</p>
+      <div class="new-level">
+        <p class="third-paragraph"><span> <img src="images/icon-ethereum.svg" alt=""> </span>.0.041  ETH </p>
+        <p class="fourth-paragraph"> <span> <img src="images/icon-clock.svg" alt=""> </span> 3 days left</p>
+      </div>    
+        <hr>
+      <div class="finale">
+          <img class="second-picture" src="images/image-avatar.png" alt=""> 
+          <p class="last"> <span class="new"> Creation of </span> Jules Wyvern</p> 
+      </div>      
+      </div>
+     
+  </div> 
+</body>
+</html>  
